@@ -7,7 +7,7 @@ export default function AboutPage() {
     <section className="page-section">
       <div className="container">
         <div className="page-intro narrow">
-          <p className="eyebrow">About Liz Nonprofit</p>
+          <p className="eyebrow">About Save Our Butterflies</p>
           <h1>
             {/* Replace this with the nonprofit&apos;s real story. */}
             Blah blah blah. Blah blah blah. Blah blah blah. Blah blah blah. Real
