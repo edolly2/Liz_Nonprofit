@@ -9,7 +9,7 @@ export function Footer() {
         <div>
           <div className="brand footer-brand">
             <ButterflyMark />
-            <span>{site.name}</span>
+            {/* <span>{site.name}</span> */}
           </div>
 
           {/* Placeholder nonprofit identity. Replace this text and all

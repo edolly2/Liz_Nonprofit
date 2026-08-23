@@ -4,8 +4,8 @@ import Link from "next/link";
 import { useState } from "react";
 import { ButterflyMark } from "./ButterflyMark";
 import { site } from "@/lib/site";
-import Logo from "@/app/assets/sob_logo_transparent_2.png";
-import Image from "next/image";
+// import Logo from "@/app/assets/sob_logo_transparent_4.png";
+// import Image from "next/image";
 
 const links = [
   ["Our Work", "/our-work"],
@@ -25,14 +25,14 @@ export function Header() {
       </a>
       <div className="container header-inner">
         <Link className="brand" href="/" aria-label={`${site.name} home`}>
-          {/* <ButterflyMark /> */}
-          <Image
+          <ButterflyMark />
+          {/* <Image
             src={Logo}
             alt="Save Our Butterflies Logo"
             width={380}
             height={127}
             priority
-          />
+          /> */}
           {/* <span>{site.name}</span> */}
         </Link>
 
