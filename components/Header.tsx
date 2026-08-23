@@ -29,8 +29,8 @@ export function Header() {
           <Image
             src={Logo}
             alt="Save Our Butterflies Logo"
-            width={276}
-            height={138}
+            width={380}
+            height={127}
             priority
           />
           {/* <span>{site.name}</span> */}
