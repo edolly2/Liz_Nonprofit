@@ -31,7 +31,7 @@ export default function HomePage() {
             aria-label="Generic black and white butterfly mark"
           >
             <ButterflyMark size={210} />
-            <p>Liz Nonprofit</p>
+            {/* <p>Liz Nonprofit</p> */}
           </div>
         </div>
       </section>
