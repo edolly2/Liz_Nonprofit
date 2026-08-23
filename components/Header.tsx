@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { ButterflyMark } from "./ButterflyMark";
 import { site } from "@/lib/site";
+import Logo from "@/assets/sob_logo.png";
 
 const links = [
   ["Our Work", "/our-work"],
@@ -18,11 +19,19 @@ export function Header() {
 
   return (
     <header className="site-header">
-      <a className="skip-link" href="#main">Skip to main content</a>
+      <a className="skip-link" href="#main">
+        Skip to main content
+      </a>
       <div className="container header-inner">
         <Link className="brand" href="/" aria-label={`${site.name} home`}>
-          <ButterflyMark />
-          <span>{site.name}</span>
+          {/* <ButterflyMark /> */}
+          <img
+            src={Logo.src}
+            alt="Save Our Butterflies Logo"
+            width={46}
+            height={46}
+          />
+          {/* <span>{site.name}</span> */}
         </Link>
 
         <button
@@ -36,11 +45,23 @@ export function Header() {
           <span aria-hidden="true">{open ? "Close" : "Menu"}</span>
         </button>
 
-        <nav id="primary-navigation" className={open ? "nav open" : "nav"} aria-label="Primary navigation">
+        <nav
+          id="primary-navigation"
+          className={open ? "nav open" : "nav"}
+          aria-label="Primary navigation"
+        >
           {links.map(([label, href]) => (
-            <Link key={href} href={href} onClick={() => setOpen(false)}>{label}</Link>
+            <Link key={href} href={href} onClick={() => setOpen(false)}>
+              {label}
+            </Link>
           ))}
-          <Link className="button button-dark nav-donate" href="/donate" onClick={() => setOpen(false)}>Donate</Link>
+          <Link
+            className="button button-dark nav-donate"
+            href="/donate"
+            onClick={() => setOpen(false)}
+          >
+            Donate
+          </Link>
         </nav>
       </div>
     </header>
