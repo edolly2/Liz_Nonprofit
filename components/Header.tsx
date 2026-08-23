@@ -29,7 +29,7 @@ export function Header() {
           <Image
             src={Logo}
             alt="Save Our Butterflies Logo"
-            width={46}
+            width={106}
             height={46}
             priority
           />
