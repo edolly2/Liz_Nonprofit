@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { ButterflyMark } from "./ButterflyMark";
 import { site } from "@/lib/site";
-import Logo from "@/app/assets/sob_logo_transparent.png";
+import Logo from "@/app/assets/sob_logo_transparent_1.png";
 import Image from "next/image";
 
 const links = [
