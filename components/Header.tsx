@@ -25,7 +25,7 @@ export function Header() {
       </a>
       <div className="container header-inner">
         <Link className="brand" href="/" aria-label={`${site.name} home`}>
-          <ButterflyMark />
+          <ButterflyMark size={380} />
           {/* <Image
             src={Logo}
             alt="Save Our Butterflies Logo"
